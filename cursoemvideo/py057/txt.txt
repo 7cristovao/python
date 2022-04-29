@@ -1,0 +1,14 @@
+# 57
+
+# Faça um prigrama que lê o sexo de uma pessoa, mas 
+# só aceite os valores ' M " ou ' F '.
+# Caso esteja errado, peça a digitação novamente
+# até ter um valor correto
+
+# 58
+
+# Melhore o jogo do desafio 28 onde o computador
+# vai pensar num NÚMERO ENTRE ZERO E DEZ .
+# Só que agroa o jogador vai tentar adivinhar até
+# acertar, mostrando no final quantos palpites 
+# foram necessários para vencer
