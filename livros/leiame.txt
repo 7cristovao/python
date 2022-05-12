@@ -1,1 +1,1 @@
-Repositório de práticas de capítulos e alguns exercícios resolvidos por mim do livro Programação em Python: Uma Introdução Completa à Linguagem Python. Autor: Mark Summerfield. Traduzido para o idioma português.
+Repositório de práticas de capítulos e alguns exercícios resolvidos por mim encontrado em livros.
