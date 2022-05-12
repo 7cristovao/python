@@ -1,0 +1,10 @@
+l = [0]
+print(l)
+l.append(2)
+l.append(3)
+l.append(11)
+l.append(10)
+print(l)
+print(len(l))
+l.sort()
+print(l)
