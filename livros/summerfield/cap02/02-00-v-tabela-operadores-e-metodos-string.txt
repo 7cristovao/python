@@ -1,0 +1,142 @@
+TABELA METODOS DE STRINGS #1
+
+SINTAXE               DESCRIÇÃO
+s.capitalize          Retorna uma cópia de str s com a primeira letra
+                      maiúscula; ver também o método str.title().
+
+s.center(width,       Retorna uma cópia de um s centralizado numa string
+    char)             de comprimento width preenchida com espaços, ou, 
+                      opcionalmente, com char(uma string de comprimento
+                      1); ver str.ljust(),str.rjust() e str.format().
+
+s.count(t,            Retorna o número de ocorrências de str t em str s 
+    start, end)       (ou na fatia start:end de s).
+
+s.encode(             Retorna um objeto bytes, que representa a string
+    encoding,         usando a codificação padrão ou usando a codificação
+    err)              (encoding) especificada e manipulação de erros, de
+                      acordo com o argumento opcional err.
+
+s.endswith(x,         Retorna True se s (ou fatia start:end, de s) termina
+    start, end)       com str x, ou com qualquer uma das string na tuple x;
+                      de outra maneira, retorna False. Ver também 
+                      str.startswith().
+
+s.expandtabs(         Retorna uma cópia de s com tabulação substituída por
+    size              espaços em múltiplos de 8 ou, então, o size se
+                      especificado.
+
+s.find(t,             Retorna a posição esquerda de t em s (ou na fatia
+     start,end)       start:end, de s) ou -1 se não é encontrado. Use str.
+                      para achar a posição mais à direita. Ver também
+                      str.index().
+
+s.format(...)         Retorna uma cópia de s formatada de acordo com o 
+                      argumento dado. Este método e seus argumentos são
+                      abordados na próxima seção
+
+s.index(t,            Retorna a posição mais à esquerda de t em s (ou na fatia
+    start, end)       start:end de s) ou lança ValueError se nada for
+                      encontrado. Use str.rindex() para procurar a partir da
+                      direita. Ver str.find().
+
+s.isalnum()           Retorna True se s não for vazia e cada caractere de
+                      s é alfanumérico.
+
+s.isalpha()           Retorna True se s não for vazia e cada caractere de s é
+                      alfabético.
+
+s.isdecimal()         Retorna True se s não for vazia e cada caractere de s é
+                      um dígito Unicode de base 10.
+
+s.isdigit()           Retorna True se s não for vazia e cada caractere de s é 
+                      um dígito ASCII.
+
+s.isidentifier()      Retorna True se s não é vazio e um identificador válido.
+
+s.islower()           Retorna True se s possuir pelo menos um caractere
+                      em letra minúscula, e se todos os seus caracteres letra
+                      minúscula estiverem em minúscula; ver também str.isupper()
+
+s.isnumeric()         Retorna True se s não é vazia e cada caractere em s for
+                      um caratere numérico do Unicode, assim como um dígito
+                      ou fração.
+
+s.isprintable()       Retorna True se s é vazia ou se todo caractere em s é 
+                      considerado imprimível, incluindo espaços; exceto nova
+                      linha.
+
+s.isspace()           Retorna True se s não é vazia e se cada caractere em s é
+                      um caractere espaço em branco.
+
+s.istitle()           Retorna True se s não é string vazia e tem as primeiras
+                      letras de cada palavra maiúscula(título); ver também str
+                      title().
+
+s.isupper()           Retorna True se s possui ao menos um caractere passível
+                      de estar em maiúsculo e se todos os seus caracteres
+                      passíveis de serem maiúsculos estejam em maiúsculo;
+                      ver também str.islower().
+
+s.join(seq)           Retorna a concatenação de cada item na sequência seq,
+                      com str s (o qual pode estar vazio) entre cada uma.
+
+s.ljust(              Retorna uma cópia do s alinhado à esquerda em uma string
+     width,           de comprimento width preenchida com espaços ou, 
+     char)            opcionalmente, com char (uma string de comprimento 1).
+                      Use str.rjust() para alinhar à direita e str.center() para
+                      centralizar. Ver também str.format().
+
+s.lower()             Retorna uma cópia em minúscula de s; ver também str.
+                      upper().
+
+s.maketrans()         Companheiro de str.translate(); ver o texto para mais
+                      detalhes.
+
+s.partition(          Retorna uma tupla de três string -- parte de str s 
+     t)               antes e mais à esquerda de str t, t e a parte de s depois
+                      de t; ou se t não está em s retorna s e duas strings 
+                      vazias. Use str.rpartition() para distribuir ocorrência
+                      mais à direita de t.
+
+s.replace(t,          Retorna uma cópia de s com cada (ou o máximo de n, se
+                      este for dado) ocorrência de str t substituiído com str u.
+                      
+s.split(t, n)         Retorna uma lista de strings fragmentadas, no máximo, n 
+                      vezes no str t; se n não for dado, ele irá fragmentar 
+                      quantas vezes for possível; se t não for dado, ele 
+                      fragmenta os espaços em branco. Use str.rsplit() para
+                      fragmentação iniciando da direita - isto faz diferença
+                      apenas se n for dado e se for menor do que o número máximo
+                      de fragmentações possíveis.
+
+s.splitlines(f)       Retorna a lista de linhas produzidas pela fragmentação de
+                      s nos finalizadores de linahs, tirando os finalizadores, a
+                      menos que f seja True.
+
+s.startswith          Retorna True se s (ou a fatia start:end de s) iniciar com
+     (x, start,       x ou qualquer outra das strings na tupla x; de outra
+     end)             maneira, retorna False. Ver também str.endswidth().
+
+s.strip(chars)        Retorna uma cópia de s com a retirada de espaços em
+                      branco (ou caracteres na str chars) da esqueda e da
+                      direita; str.lstrip() faz o strip somente no início, e
+                      str.rstrip() faz o strip somente no final.
+
+s.swapcase()          Retorna uma cópia de s com caracteres maiúsculos em
+                      minúsculo, e caracteres minúsculos em maiúsculo; ver
+                      também str.lower() e str.upper().
+
+s.title()             Retorna uma cópia de s, em que a primeira letra de cada
+                      palavra é maiúscula e todas as outras são minúsculas;
+                      ver também str.istitle().
+
+s.translate()         Companheiro de str.maketrans(); ver o terxto para mais
+                      detalhes.
+
+s.upper()             Retorna uma cópia maiúscula de s; ver também str.lower().
+
+s.zfill(w)            Retorna uma cópia de s que, se for menor que w, será
+                      preenchida com zeros à esquerda para que fique com 
+                      comprimento w.
+

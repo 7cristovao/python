@@ -1,0 +1,49 @@
+# TABELA OPERADORES NUMÉRICOS E FUNÇÕES
+
+# SINTAXE               DESCRIÇÃO
+# x + y                 # Adiciona o número x e o número y
+# x - y                 # Subtrai y de x
+# x * y                 # Multiplica x por y
+# x / y                 # Divide x por y; sempre produz um 'float' (ou um 'complex', se x ou y é 'complex')
+# x // y                # Divide x por y; trunca qualquer parte fracional; logo, sempre produz um ...
+#                         ... resultado 'int', veja também a função round()
+# x % y                 # Produz o módulo (resto) da divisão de x por y
+# x ** y                # Eleva x a y; veja também a função pow()
+# -x                    # Nega x; muda o sinal de x, se não zero; não faz nada caso seja zero
+# +x                    # Não faz nada, é algo usado para escurecer melhor o código
+# abs(x)                # Retorna o valor absoluto de x
+# divmod(x,y)           # Retorna o quociente e o resto da divisão x por y como uma tupla de dois 'ints'
+# pow(x, y)             # Eleva x a y; o mesmo que faz o operador **
+# pow(x, y, z)          # Uma alternativa rápida para (x**y)%z 
+# round(x, n)           # Retorna o 'int' correspondente para o 'float x' arredondado para um número ...  
+#                         ... inteiro (ou um float para n casas decimais se n for dado)
+
+# TABELA FUNÇÕES DE CONVERSÃO DE INTEIROS
+
+# SINTAXE               DESCRIÇÃO
+# bin(i)                # Retorna a representação binária de int i como uma string,
+#                         por exemplo, bin(1980) == "0b11110111100"
+# hex(i)                # Retorna a representação hexadecimal  de i como uma string
+#                         por exemplo, hex (1980) == '0x7bc'
+# int(x)                # Converte o objeto 'x' em um inteiro; dispara 'ValueError'
+#                         em caso de falha ou 'TypeError', se o tipo de dados de 'x' não suporta
+#                         a conversão de inteiro. Se 'x' é um número de ponto flutuante
+#                         o mesmo será truncado.
+# int(s, base)          # Converte 'str s' em um inteiro; dispara 'ValueError' numa falha.
+#                         Se o argumento opcional 'base'  é dado, 
+#                         ele deverá ser um inteiro entre 2 e 36 (inclusive)
+# oct(i)                # Retorna a representação octal de 'i' como um string, por exemplo
+#                         oct(1980) == '0o3674'
+
+# TABELA OPERADORES INTEIROS BIA A BIT
+
+# SINTAXE               DESCRIÇÃO
+# i | j                 Lógica binária 'OR' de 'int i' e 'int j'; assume-se que números ...
+#                       ... negativos são representados usanto complemento de 2
+# i ^ j                 Lógica binária XOR (ou exclusivo) de 'i' e 'j'
+# i & j                 Lógica binária AND de 'i' e 'j'
+# i << j                Deslocamento esquerdo de 'i' por 'j' bits vezes, como 'i * (2**j) ' ...
+#                       ... sem a checagem de estouro (overflow)
+# i >> j                Altera 'i' para direita 'j' bits vezes, como 'i//(2**j) sem a checagem ...
+#                       ... de estouro (overflow)
+# ~i                    Inverte os bits de 'i'  ... NOT

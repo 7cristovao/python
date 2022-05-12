@@ -1,0 +1,22 @@
+Python 3.7.3 (default, Jan 22 2021, 20:04:44) 
+[GCC 8.3.0] on linux
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> artist = "Tage Åsén"
+>>> artist.encode("Latin1")
+b'Tage \xc5s\xe9n'
+>>> artist.encode("CP850")
+b'Tage \x8fs\x82n'
+>>> artist.encode("utf8")
+b'Tage \xc3\x85s\xc3\xa9n'
+>>> artist.encode("utf16")
+b'\xff\xfeT\x00a\x00g\x00e\x00 \x00\xc5\x00s\x00\xe9\x00n\x00'
+>>> print(b"Tage \xc3\x85\xc\xa9n".decode("utf8"))
+SyntaxError: (value error) invalid \x escape at position 13
+>>> print(b"Tage \xc3\x85s\xc3\xa9n".decode("utf8"))
+Tage Åsén
+>>> print(b"Tage \xc5s\x9en".decode("latin1")
+      )
+Tage Åsn
+>>> print(b"Tage \xc5s\xe9n".decode("latin1"))
+Tage Åsén
+>>> 

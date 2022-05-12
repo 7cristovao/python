@@ -1,0 +1,53 @@
+Python 3.7.3 (default, Jul 25 2020, 13:03:44) 
+[GCC 8.3.0] on linux
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> 5+6
+11
+>>> 3-7
+-4
+>>> 4*8
+32
+>>> 12/3
+4.0
+>>> 3/2
+1.5
+>>> a = 5
+>>> a
+5
+>>> a += 8
+>>> a
+13
+>>> 
+=============================== RESTART: Shell ===============================
+>>> name = "John"
+>>> name = "Doe"
+>>> 
+=============================== RESTART: Shell ===============================
+>>> name = "John"
+>>> name + "Doe"
+'JohnDoe'
+>>> name += " Doe"
+>>> name
+'John Doe'
+>>> 
+=============================== RESTART: Shell ===============================
+>>> seeds = ["sesame", "sunflower"]
+>>> seeds += ["pumpkin"]
+>>> seeds
+['sesame', 'sunflower', 'pumpkin']
+>>> seeds += 5
+Traceback (most recent call last):
+  File "<pyshell#18>", line 1, in <module>
+    seeds += 5
+TypeError: 'int' object is not iterable
+>>> seeds += [5]
+>>> seeds
+['sesame', 'sunflower', 'pumpkin', 5]
+>>> seeds += [9, 1, 5, "poppy"]
+>>> seeds
+['sesame', 'sunflower', 'pumpkin', 5, 9, 1, 5, 'poppy']
+>>> seeds = ["sesame", "sunflower", "pumpkin"]
+>>> seeds += "durian"
+>>> seeds
+['sesame', 'sunflower', 'pumpkin', 'd', 'u', 'r', 'i', 'a', 'n']
+>>> 

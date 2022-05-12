@@ -1,0 +1,4 @@
+abs()
+abs(i)  # retorna o valor absoluto do inteiro i 
+int 
+i + j  # retorna a soma dos inteiros i + j

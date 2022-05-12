@@ -1,0 +1,42 @@
+Python 3.7.3 (default, Jul 25 2020, 13:03:44) 
+[GCC 8.3.0] on linux
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> s = "The waxwork man"
+>>> s = s[:12] + "wo" + s[12:]
+>>> s
+'The waxwork woman'
+>>> s= ̏he ate the camel food˝
+SyntaxError: invalid character in identifier
+>>> s = ``he ate the camel food´´
+SyntaxError: invalid syntax
+>>> s= "he ate the camel food"
+>>> s[::-2]
+'do ea h t h'
+>>> s[::-2] == 'do ea t h'
+False
+>>> s[::3] == 'ha m o'
+False
+>>> s[::3]
+'ha ealo'
+>>> s, s[::-1]
+('he ate the camel food', 'doof lemac eht eta eh')
+>>> s = "The waxwork man"
+>>> s, s[::-1]
+('The waxwork man', 'nam krowxaw ehT')
+>>> s = "The waxwork woman"
+>>> s, s[::-1]
+('The waxwork woman', 'namow krowxaw ehT')
+>>> s = "he ate camel food"
+>>> s[::-2]
+'do ea t h'
+>>> s[::3]
+'ha m o'
+>>> s[-1:2:-2]
+'do ea t'
+>>> s[:2:-2]
+'do ea t'
+>>> s[0:-5:3]
+'ha m'
+>>> s[:-5:3]
+'ha m'
+>>> 

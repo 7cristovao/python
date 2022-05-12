@@ -1,0 +1,5 @@
+# BOOLEANOS
+
+# (0) O tipo de dados é 'bool'
+# (1) Função sem nenhum argumento ele retorna 'False'
+# (2) Com outro argumento ele tenta converter em 'bool'

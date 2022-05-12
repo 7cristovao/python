@@ -1,0 +1,31 @@
+Python 3.7.3 (default, Jul 25 2020, 13:03:44) 
+[GCC 8.3.0] on linux
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> text = """Uma string com aspas triplas como essa pode incluir 'aspas simples' e "aspas duplas" sem formalidade. Nós também podemos evitar newline \entao essa string em particular tem somente duas linhas."""
+>>> a = "Single 'quotes' are fine; \"doubles\" must be escaped."
+>>> b = 'Single \'quotes\' must be escaped; "doubles" are fine'
+>>> 
+=============================== RESTART: Shell ===============================
+>>> import re
+>>> phone1 = re.compile("^((?:[(]\\d+[)])?\\s*\\d+(?:-\\d+)?)$")
+>>> phone2 = re.compile(r"^((?:[(]\d+[)])?\s*\d+(?:-\d+)?)$")
+>>> t = "Esta não é a melhor maneira de juntar duas strings longas" + \ "Juntos já que depende em um escape de newline feio"
+SyntaxError: unexpected character after line continuation character
+>>> s = ("Esta é uma boa maneira de juntar as duas strings longas" "Juntas; dependem da concatenação literal de string")
+>>> 
+=============================== RESTART: Shell ===============================
+>>> euros = "€ \N{euro sign} \u20AC \U000020AC"
+>>> print(euros)
+€ € € €
+>>> ord(euros[0])
+8364
+>>> hex(ord(euros[0]))
+'0x20ac'
+>>> 
+=============================== RESTART: Shell ===============================
+>>> s = "anarchists are " + chr(8734) + chr(0x23B7)
+>>> s
+'anarchists are ∞⎷'
+>>> ascii(s)
+"'anarchists are \\u221e\\u23b7'"
+>>> 

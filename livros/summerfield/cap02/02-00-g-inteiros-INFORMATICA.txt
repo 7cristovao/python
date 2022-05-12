@@ -1,0 +1,21 @@
+Python 3.7.3 (default, Jul 25 2020, 13:03:44) 
+[GCC 8.3.0] on linux
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> 14600926  # decimal
+14600926
+>>> 0b110111101100101011011110  # binary
+14600926
+>>> 0o67545336  # octal
+14600926
+>>> 0xDECADE  # hexadecimal
+14600926
+>>> 
+
+# CÓDIGO INICIAL DOS NÚMEROS
+# 0b # binario
+# 0o # octal
+# 0x # hexadecimal
+
+# Letras maiusculas tambem podem ser usadas
+
+

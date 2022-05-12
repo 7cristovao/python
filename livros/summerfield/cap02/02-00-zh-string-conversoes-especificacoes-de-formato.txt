@@ -1,0 +1,136 @@
+Python 3.7.3 (default, Jan 22 2021, 20:04:44) 
+[GCC 8.3.0] on linux
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> decimal.Decimal("3.4084")
+Traceback (most recent call last):
+  File "<pyshell#0>", line 1, in <module>
+    decimal.Decimal("3.4084")
+NameError: name 'decimal' is not defined
+>>> import decimal
+>>>  decimal.Decimal("3.4084")
+ 
+SyntaxError: unexpected indent
+>>> decimal.Decimal("3.4084")
+Decimal('3.4084')
+>>> print(decimal.Decimal("3.4084")
+      
+KeyboardInterrupt
+>>> print(decimal.Decimal("3.4084"))
+3.4084
+>>> "{0} {0!s} {0!r} {0!a}".format(decimal.Decimal("93.4"))
+"93.4 93.4 Decimal('93.4') Decimal('93.4')"
+>>> s = "The sword of truth"
+>>> "{0}".format(s)
+'The sword of truth'
+>>> "{0}".format(s)  # default formatting
+'The sword of truth'
+]
+>>> "{0:25}".format(s)  # minimum width 25
+'The sword of truth       '
+>>> "{0:>25}".format(s)  # right align, minimum width 25
+'       The sword of truth'
+>>> "{0:^25}".format(s)  # center align, minimum width 25
+'   The sword of truth    '
+>>> "{0:-<25}".format(s)  # - fill, center align, minimum width 25
+'The sword of truth-------'
+>>> "{0:-^25}".format(s)  # - fill, center align, minimum width 25
+'---The sword of truth----'
+>>> "{0:.<25}".format(s)  # . fill, left align, minimum width 25
+'The sword of truth.......'
+>>> "{0:.10}".format(s)   # maximum width 10
+'The sword '
+>>> maxwidth = 12
+>>> "{0}".format(s[:maxwidth])
+'The sword of'
+>>> "{0:.{1}}".format(s, maxwidth)
+'The sword of'
+>>> "{0:0=12}".format(8749203  # 0 fill, minimum width 12
+		  )
+'000008749203'
+>>> "{0:0=12)".format(-87490203)  # 0 fill, minimum width 12
+Traceback (most recent call last):
+  File "<pyshell#22>", line 1, in <module>
+    "{0:0=12)".format(-87490203)  # 0 fill, minimum width 12
+ValueError: unmatched '{' in format spec
+>>> "{0:0=12}".format(-87490203)
+'-00087490203'
+>>> "{0:012}".format(8749203)
+'000008749203'
+>>> "{0:012}".format(-8749203)  # 0-pad and minimum width 12
+'-00008749203'
+>>> "{0:*<15}".format(18340427)  # fill, left align, min width 15
+'18340427*******'
+>>> "{0:*>15}".format(18340427)  # * fill, right align, min width 15
+'*******18340427'
+>>> "{0:*^15}".format(18340427)  # * fill, center align, min width 15
+'***18340427****'
+>>> "{:*^15}".format(-18340427)  # * fill, center align, min width 15
+'***-18340427***'
+>>> "[{0: }] [{1: }]".format(539802, -539802)  # space or - sign
+'[ 539802] [-539802]'
+>>> "[{0:+}] [{1:+}]".format(539802, -539802)  # force sign
+'[+539802] [-539802]'
+>>> "[{0:-}] [{1:-}]".format(539802, -539802)  # - sign if needed
+'[539802] [-539802]'
+>>> "{0:b} {0:o} {0:x} {0:X}".format(14613198)
+'110111101111101011001110 67575316 deface DEFACE'
+>>> "{0:#b} {0:#o} {0:#x} {0:#X}".format(14613198)
+'0b110111101111101011001110 0o67575316 0xdeface 0XDEFACE'
+>>> import locale
+>>> locale.setlocale(locale.LC_ALL, "")
+'pt_BR.UTF-8'
+>>> x, y = (1234567890, 1234.56)
+>>> locale.setlocale(locale.LC_ALL, "C")
+'C'
+>>> c = "{0:n} {1:n}".format(x,y)  # c == "1234567890 1234.56"
+>>> locale.setlocale(locale.LC_ALL, "en_SU.UTF-8")
+Traceback (most recent call last):
+  File "<pyshell#40>", line 1, in <module>
+    locale.setlocale(locale.LC_ALL, "en_SU.UTF-8")
+  File "/usr/lib/python3.7/locale.py", line 604, in setlocale
+    return _setlocale(category, locale)
+locale.Error: unsupported locale setting
+>>> locale.setlocale(locale.LC_ALL, "en_US.UTF-8")
+Traceback (most recent call last):
+  File "<pyshell#41>", line 1, in <module>
+    locale.setlocale(locale.LC_ALL, "en_US.UTF-8")
+  File "/usr/lib/python3.7/locale.py", line 604, in setlocale
+    return _setlocale(category, locale)
+locale.Error: unsupported locale setting
+>>> en = "{0:n} {1:n}".format(x, y)   # en == "1,234,567,890 1,234.56"
+>>> locale.setlocale(locale.LC_ALL, "de_DE.UTF-8")
+Traceback (most recent call last):
+  File "<pyshell#43>", line 1, in <module>
+    locale.setlocale(locale.LC_ALL, "de_DE.UTF-8")
+  File "/usr/lib/python3.7/locale.py", line 604, in setlocale
+    return _setlocale(category, locale)
+locale.Error: unsupported locale setting
+>>> de = "{0:n} {1:n}".format(x, y)  # de == "1.234.567.890 1.234,56"
+>>> amount = (10 ** 3) * math.pi
+Traceback (most recent call last):
+  File "<pyshell#45>", line 1, in <module>
+    amount = (10 ** 3) * math.pi
+NameError: name 'math' is not defined
+>>> import math
+>>> amount = (10 ** 3) * math.pi
+>>> "[{0:12.2e)] [{0:12.2f}]".format(amount)
+Traceback (most recent call last):
+  File "<pyshell#48>", line 1, in <module>
+    "[{0:12.2e)] [{0:12.2f}]".format(amount)
+ValueError: unmatched '{' in format spec
+>>> "[{0:12.2e}] [{0:12.2f}]".format(amount)
+'[    3.14e+03] [     3141.59]'
+>>> "[{0:*>12.2e}] [{0:*>12.2f}]".format(amount)
+'[****3.14e+03] [*****3141.59]'
+>>> "[{0:*>+12.2e)] [{0:*>+12.2f}]".format(amount)
+Traceback (most recent call last):
+  File "<pyshell#51>", line 1, in <module>
+    "[{0:*>+12.2e)] [{0:*>+12.2f}]".format(amount)
+ValueError: unmatched '{' in format spec
+>>> "[{0:*>+12.2e}] [{0:*>+12.2f}]".format(amount)
+'[***+3.14e+03] [****+3141.59]'
+>>> "{0.real:.3f}{0.imag:+.3f}j".format(4.75917+1.2042j)
+'4.759+1.204j'
+>>> "{0.real:.3f}{0.imag:+.3f}j".format(4.75917-1.2042j)
+'4.759-1.204j'
+>>> 

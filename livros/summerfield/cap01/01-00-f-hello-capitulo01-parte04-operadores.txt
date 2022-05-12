@@ -1,0 +1,64 @@
+Python 3.7.3 (default, Jul 25 2020, 13:03:44) 
+[GCC 8.3.0] on linux
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> a = 2
+>>> b = 6
+>>> a == b
+False
+>>> a < b
+True
+>>> a <= b, a != b, a >= b, a > b
+(True, True, False, False)
+>>> 
+=============================== RESTART: Shell ===============================
+>>> a = "many paths"
+>>> b = "many paths"
+>>> a is b
+False
+>>> a == b
+True
+>>> 
+=============================== RESTART: Shell ===============================
+>>> a = 9
+>>> 0 <= a <= 10
+True
+>>> 
+=============================== RESTART: Shell ===============================
+>>> "three" < 4
+Traceback (most recent call last):
+  File "<pyshell#11>", line 1, in <module>
+    "three" < 4
+TypeError: '<' not supported between instances of 'str' and 'int'
+>>> p = (4, "frog", 9, -33, 9, 2)
+>>> 2 in p
+True
+>>> "dog" not in p
+True
+>>> 
+=============================== RESTART: Shell ===============================
+>>> phrase = "Peace is no longer permitted during Winterval"
+>>> "v" in phrase
+True
+>>> "ring" in phrase
+True
+>>> 
+=============================== RESTART: Shell ===============================
+>>> five = 5
+>>> two = 2
+>>> zero = 0
+>>> five and two
+2
+>>> two and five
+5
+>>> five and zero
+0
+>>> nought = 0
+>>> five or two
+5
+>>> two or five
+2
+>>> zero or five
+5
+>>> zero or nought
+0
+>>> 

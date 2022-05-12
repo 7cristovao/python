@@ -1,0 +1,6 @@
+Python 3.7.3 (default, Jul 25 2020, 13:03:44) 
+[GCC 8.3.0] on linux
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> 0.0, 5.4, -2.5, 8.9e-4
+(0.0, 5.4, -2.5, 0.00089)
+>>> 

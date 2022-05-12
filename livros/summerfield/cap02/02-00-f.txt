@@ -1,0 +1,13 @@
+Python 3.7.3 (default, Jul 25 2020, 13:03:44) 
+[GCC 8.3.0] on linux
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> stretch-factor = 1
+SyntaxError: can't assign to operator
+>>> 2miles = 2
+SyntaxError: invalid syntax
+>>> str = 3 # Legal but BAD
+>>> l1impôt31 = 4
+>>> l'impôt31 = 4
+SyntaxError: EOL while scanning string literal
+>>> l_impôt31 = 5
+>>> 

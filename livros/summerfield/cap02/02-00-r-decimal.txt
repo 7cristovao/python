@@ -1,0 +1,23 @@
+Python 3.7.3 (default, Jul 25 2020, 13:03:44) 
+[GCC 8.3.0] on linux
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> import decimal
+>>> a = decimal.Decimal(9876)
+>>> b = decimal.Decimal("54321.012345678987654321")
+>>> a + b
+Decimal('64197.012345678987654321')
+>>> 
+>>> 
+>>> 23 / 1.05
+21.904761904761905
+>>> print(23 / 1.05)
+21.904761904761905
+>>> print(decimal.Decimal(23) / decimal.Decimal("1.05")
+      )
+21.90476190476190476190476190
+>>> decimal.Decimal(23) / decimal.Decimal("1.05)
+				      
+SyntaxError: EOL while scanning string literal
+>>> decimal.Decimal(23) / decimal.Decimal("1.05")
+Decimal('21.90476190476190476190476190')
+>>> 

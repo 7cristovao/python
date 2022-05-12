@@ -1,0 +1,19 @@
+Python 3.7.3 (default, Jul 25 2020, 13:03:44) 
+[GCC 8.3.0] on linux
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> treatises = ["Arithmetica", "Conics", "Elements"]
+>>> " ".join(treatises)
+'Arithmetica Conics Elements'
+>>> "-<>-".join(treatises)
+'Arithmetica-<>-Conics-<>-Elements'
+>>> "".join(treatises)
+'ArithmeticaConicsElements'
+>>> 
+=============================== RESTART: Shell ===============================
+>>> s = "=" * 5
+>>> print(s)
+=====
+>>> s *= 10
+>>> print(s)
+==================================================
+>>> 

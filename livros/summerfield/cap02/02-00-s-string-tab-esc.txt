@@ -1,0 +1,19 @@
+TABELA DE ESCAPES DE STRINGS DO PYTHON
+
+SINTAXE               SENTIDO
+\newline              Escape(i.e., ignora uma nova linha (newline)
+\\                    Barra (\)
+\'                    Aspas simples(')
+\"                    Aspas duplas(")
+\a                    ASCII bell (BEL)
+\b                    ASCII backspace (BS)
+\f                    ASCII form feed (FF)
+\n                    ASCII line feed (LF)
+\N(name)              Caractere do Unicode com o nome dado
+\ooo                  Caractere como um dado valor octal
+\r                    ASCII cariaege return (CR)
+\t                    ASCII tab(TAB)
+\uhhhh                Caractere do Unicode com o valor hexadecimal 16-bites dado
+\uhhhhhhhh            Caractere do Unicode com o valor hexadecimal 32-bites dado
+\v                    ASCII tabulação vertical (VT)
+\xhh                  Caractere com o valor hexadecimal de 8-bits
