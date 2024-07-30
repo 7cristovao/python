@@ -1,0 +1,93 @@
+EXERCÍCIOS    ASSUNTO
+py001         print(SAÍDA)
+py002         input(ENTRADA)
+py003         var int, var str, inserir dic. básico, método format, atribuição
+py004         mét isspace, isnumeric, isalnum, isalpha, islower, isupper, istitle
+py005         operação aritmética de soma
+py006         operação aritmética, potenciação e radiciação
+py007         variáveis tipo flutuante, fixação de quantidade de casas decimais
+py008         variáveis tipo flutuante cont, fixação de quant de casas decimais
+py009         operação com inteiros, operação com string, tabuada
+py010         operações aritméticas: multiplicação e divisão, CONVERSOR DE MOEDAS
+py011         operações aritméticas: equações, regra de três simples
+py012         operações aritméticas: porcentagem desconto,  PRECIFICAÇÃO
+py013         operações aritméticas: porcentagem aumento
+py014         operações aritméticas: conversor de temperaturas
+py015         operações aritméticas: aluguel de carros
+py016         import módulos, import classes, utilização mét classes, mét.truncar
+py017         importação de módulos continuação, imp. de classes, mét. hypot
+py018         módulo math, métodos sin, cos, tan
+py019         classe random, método choice, ALEATÓRIO
+py020         classe random, método shuffle, ALEATÓRIO
+py021         classe pygame, INCOMPLETO
+py022         text STRINGS, len, upper, lower, find, title, count, replace, strip
+py023         manipulação de texto STRINGS, split, [start:end:step]
+py024         STRINGS: fatiamento[0:0:0], strip, uppper, comparação
+py025         STRINGS: lower, strip, find, comparação
+py026         STRINGS: strip, upper, count, find, rfind
+py027         STRINGS: lista: selecionando primeiro índice e último índice
+py028         condicional simples: JOGO DA ADIVINHAÇÃO 
+py029         condicional simples: RADAR ELETRONICO
+py030         condicional simples: módulo resto de divisão, PAR OU ÍMPAR
+py031         condicional ternário: VIAGEM
+py032         condicional simples: classe datetime, método today, ANO BISSEXTO
+py033         condicional simples: maior e menor valores
+py034         condicional simples: porcentagem multipla, SALARIO DeFUNCIONARIO
+py035         condicional simples: ANALISADOR DE TRIANGULOS
+cores
+py036         condicional aninhada: EMPRESTIMO BANCARIO
+py037         condicional aninhada: CONVERSOR decimal para hex, oct, bin
+py038         condicional aninhada: COMPARA MENOR E MAIOR NUMERO INTEIRO
+py039         condicional aninhada: módulo datetime, date, today, JUNTA
+py040         condicional aninhada: media ALUNO APROVADO RECUPERACAO REPROVADO
+py041         condicional aninhada: categoria NATACAO
+py042         condicional aninhada: ANALISADOR DE TRIANGULOS, bool
+py043         condicional aninhada: IMC, float
+py044         condicional aninhada: PREÇO: CONDICOES DE PAGAMENTO, porcentagem
+py045         condicional aninhada: JÓ-KEN-PÕ: jogo da pedra_papel_tesoura
+py046         estrutura de laço: for: CONTAGEM REGRESSIVA, modulo time, sleep 
+py047         estrutura de laço: for: PARES entre UM e CINQUENTA,
+py048         estrutura de laço: for: SOMA entre PARES MULTIPLOS de 3, UM a 500 
+py049         estrutura de laço: for: TABUADA com estrutura de iteração FOR 
+py050         estrutura de laço: for: le SEIS INTEIROS, mostra PARES, IMPAR não
+py051         estrutura de laço: for: le PRIM. TERMO e RAZAO de PA, mostre 10 1ºs
+py052         estrutura de laço: for: le INT e resolve PRIM, lembranç.fermat 16?*
+py053         estrutura de laço: for: le e diz se é ou não um PALÍNDROMO  
+py054         estrutura de laço: for: le ANO DE NASC de 7, mostra se é menor e >
+py055         estrutura de laço: for: le o peso de 5, mostra o > e o < peso
+py056         estrutura de laço: for: le NOM,IDAD,SX, mostra med, +velh, qte<20m
+py057         estrutura de laço: while: le SEXO, aceita M ou F, errou repete
+py058         estrutura de laço: while: MELH 28, COMP SRTEIA |.| 0E10, AT.ACERT
+              random, randintm, time, sleep, CONTADOR
+py059         estrutura de laço: while: if else: SOMA, MULT., MAIOR, REPETE, SAIR
+py060         estrutura de laço: while: CONT., FATORIAL, math metodo factorial 
+py061         estrutura de laço: while: REFAZ 51, PA, mostra 10 1º, CONT.como i  
+py062         estrutura de laço: while: REFAZ 61, most +alg ter, pausa, i=0 =>fim
+py063         estrutura de laço: while: FIOBINACCI, MESM LINHA, t1, t2, t3, for: 
+py064         estrutura de laço: while: N DIF 999, CONTADOR, DESC. FLAG (a) (b)
+py065         estrutura de laço: while: le VARIOS INT, MOSTR MEDIA, > e <, CONT? 
+py066         estrutura de laço: while: QTE, SOMA, COND. DE PARADA, CONTA INPUT  
+py067         estrutura de laço: while True: break: break: TABUADA, NEGATIV TRAV 
+py068         estrutura de laço: while True: JG PAR OU IMP c/PC, PERD INTERROMPE
+              metodo randint do modulo random, met.upper(), met.strip()
+py069         estrutura de laço: while True: MOSTR>18, H, M < 20, CONTIN, break
+py070         estrutura de laço: while True: while x not in 'SN':
+              SOMA PREÇO, QTE PROD MAIOR QUE 1000, MAIOR PREÇO, MENOR PREÇO
+py071         estrutura de laço: while True: SIM CX ELETR 
+py072         tupla: CRIAR TUPLA, LER TUPLA, ESCR TUPLA, ESCREVE N.POR EXTENSO
+py073         tupla: metodo sorted(x): metodo str.index('p') P/ENCONTRAR PALAVR
+py074         tupla: for item in iterable: met. min, max, random, randint
+py075         tupla: str.count, str.index, if x in Y: for n in Y: if PAR else:
+              RESOLVE O ERRO DA APLICACAO POR NAO SE TER DIGITADO O VALOR
+py076         tupla: for pos in range(0, len(lista)): if pos PAR, listagem[pos]
+              CENTRALIZADA, AESQ, ADIR, FORMATACAO FLOAT, LISTAGEM[POSICAO] FOR
+              QUEBRA DE LINHA USANDO str.format((x).end=' ')
+py077         tupla: VARIAS PALAVRAS, MOST VOGAIS, for p in palavras: print(p);
+              for letra in p: print(letra); if letra in 'aeiou'; VARREDURA
+py078         listas: str.append(x); for i, j in enumerate(listanum): 
+              if j == MENOR: print(i);
+              if j == MAIOR: print(i); str.max(x), str.min(x), MAIOR, MENOR,
+              if c == 0: mai = men = listanum[c]; else: if listanum[c] > mai:
+              mai = listanum[c]; if listanum[c] < men: men = listanum[c]; c=POS 
+py079         listas: x = list();if n not in x: x.append(n);if r in 'Nn':x.sort() 
+py080         
