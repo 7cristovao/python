@@ -90,4 +90,27 @@ py078         listas: str.append(x); for i, j in enumerate(listanum):
               if c == 0: mai = men = listanum[c]; else: if listanum[c] > mai:
               mai = listanum[c]; if listanum[c] < men: men = listanum[c]; c=POS 
 py079         listas: x = list();if n not in x: x.append(n);if r in 'Nn':x.sort() 
-py080         
+py080         listas: if c == 0: lista.append(n);
+              elif n > lista[-1]: lista.append(n); ADICIONA DADO AO FIM DA LISTA
+              while posicao < len(lista): if n <= lista[posicao]: 
+              lista.insert(posicao, n); ADICIONA NA POSICAO {} DA LISTA
+py081         listas: l.pop(); l.sort(); METODO POP, REMOVE ULTIMO ITEM DA LISTA
+              METODO SORT, ORDENA ELEMENTOS DE UMA LISTA
+py082         listas: l.pop(); METODO POP 
+py083         listas: METODO APPEND, METODO POP
+py084         listas: METODO LEN, MET. APPEND, METODO CLEAR, MAIOR PESO, MENOR PESO
+py085         listas: METODO APPEND, METODO CLEAR, METODO SORT
+py086         listas: METODO APPEND EM UM FOR
+py087         listas: SOMATORIO em LISTAS, FOR DENTRO DE FOR, MET. APPEND, MET. MAX
+py088         listas: MET. SORT, MET. APPEND, MET. CLEAR DENTRO DE UM WHILE ANINHADO
+py089         listas: LISTA COMPOSTA
+
+
+
+
+
+
+
+
+
+
